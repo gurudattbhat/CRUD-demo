@@ -23,39 +23,31 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public Iterable<Post> list() {
+    public Iterable<Post> read() {
         return postRepository.findAll();
     }
 
+    @Override
     public List<Post> addItem(Post post){
         postRepository.save(post);
         return postRepository.findAll();
     }
 
-//    @Override
-//    public Post read(long id) {
-//        return postRepository.findOne(id);
-//    }
-//
-//    @Override
-//    @Transactional
-//    public Post create(Post post) {
-//        // save the new author
-//        authorRepository.save(post.getAuthor());
-//        return postRepository.save(post);
-//    }
-//
-//    @Override
-//    public void delete(long id) {
-//        postRepository.delete(id);
-//    }
-//
-//    @Override
-//    public Post update(long id,Post update) {
-//        Post post = postRepository.findOne(id);
-//        if( update.getTitle() != null ) {
-//            post.setTitle(update.getTitle());
-//        }
-//        return postRepository.save(post);
-//    }
+    @Override
+    public void delete(long id)
+    {
+        postRepository.delete(id);
+    }
+
+
+    @Override
+    public Post update(long id,Post Update)
+    {
+        Post post=postRepository.findOne(id);
+        if(Update.getTitle()!=null)
+        {
+            post.setTitle(Update.getTitle());
+        }
+        return postRepository.save(post);
+    }
 }

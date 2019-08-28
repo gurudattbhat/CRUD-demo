@@ -7,10 +7,8 @@ import java.util.List;
 
 
 public interface PostService{
-    public Iterable<Post> list();
-    List<Post> addItem(Post post);
-//    Post create (Post post);
-//    Post read(long id);
-//    Post update(long id,Post post);
-//    void delete (long id);
+     Iterable<Post> read();
+     List<Post> addItem(Post post);
+     void delete(long id);
+     Post update(long id,Post post);
 }

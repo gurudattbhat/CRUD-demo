@@ -18,7 +18,7 @@ public class Author {
 	private String firstName;
 	private String lastName;
 	
-	//posts
+
 	@OneToMany( mappedBy = "author" )
 	@JsonIgnore
 	private List<Post> posts;

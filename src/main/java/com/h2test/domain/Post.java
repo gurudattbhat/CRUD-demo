@@ -21,10 +21,10 @@ public class Post {
 	@JoinColumn(name="author_id")
 	private Author author;
 	
-	// private no arg constructor is needed by JPA
+
 	private Post(){}
 	
-	// our public constructor makes sure a title is set when creating a new Post
+
 	public Post(String title){
 		this.setTitle(title);
 	}
