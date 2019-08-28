@@ -6,6 +6,9 @@ import com.h2test.repository.AuthorRepository;
 import com.h2test.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
@@ -50,4 +53,16 @@ public class PostServiceImpl implements PostService {
         }
         return postRepository.save(post);
     }
+
+    @Override
+    public Post findOne(long id)
+    {
+        return postRepository.findOne(id);
+    }
+
+    @Override
+    public List<Post> findByTitle(String title) {
+        return postRepository.findByTitle(title);
+    }
+
 }

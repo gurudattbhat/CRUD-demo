@@ -11,4 +11,6 @@ public interface PostService{
      List<Post> addItem(Post post);
      void delete(long id);
      Post update(long id,Post post);
+     Post findOne(long id);
+     List<Post> findByTitle(String title);
 }

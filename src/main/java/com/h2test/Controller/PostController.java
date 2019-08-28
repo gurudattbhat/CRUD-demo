@@ -52,4 +52,15 @@ public class PostController {
         return postService.update(id,post);
     }
 
+    @RequestMapping (value="/{id}", method= RequestMethod.GET)
+    public Post findOne(@PathVariable(value="id") long id)
+    {
+        return postService.findOne(id);
+    }
+
+    @RequestMapping(value="/search/{title}",method=RequestMethod.GET)
+    public List<Post> findByName(@PathVariable String title)
+    {
+        return postService.findByTitle(title);
+    }
 }
