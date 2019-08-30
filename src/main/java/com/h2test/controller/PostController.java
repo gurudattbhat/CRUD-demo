@@ -1,9 +1,8 @@
-package com.h2test.Controller;
-
+package com.h2test.controller;
+import com.h2test.dto.PostDto;
 import com.h2test.domain.Post;
 import com.h2test.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,9 +32,9 @@ public class PostController {
 
 
     @RequestMapping( value = "/", method = RequestMethod.POST )
-    public List<Post> addData(@RequestBody Post post)
+    public List<Post> addData(@RequestBody PostDto postDto)
     {
-        return postService.addItem(post);
+        return postService.addItem(postDto);
     }
 
 
@@ -55,12 +54,14 @@ public class PostController {
     @RequestMapping (value="/{id}", method= RequestMethod.GET)
     public Post findOne(@PathVariable(value="id") long id)
     {
-        return postService.findOne(id);
+         return postService.findOne(id);
+
+
     }
 
     @RequestMapping(value="/search/{title}",method=RequestMethod.GET)
     public List<Post> findByName(@PathVariable String title)
     {
-        return postService.findByTitle(title);
+        return postService.findByTitleContaining(title);
     }
 }

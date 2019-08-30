@@ -1,19 +1,19 @@
 package com.h2test.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+@Component
 @Entity
 public class Author {
 	
 	@Id
-	@GeneratedValue
 	private Long id;
 	private String firstName;
 	private String lastName;

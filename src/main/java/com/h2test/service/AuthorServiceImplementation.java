@@ -22,21 +22,16 @@ public class AuthorServiceImplementation implements AuthorService {
 
     }
 
-    public Author addAuthor(Author author)
-    {
-         authorRepository.save(author);
-         return authorRepository.findOne(author.getId());
-    }
-
-
-    public List<Author> addItem(Author author){
-        authorRepository.save(author);
-        return authorRepository.findAll();
-    }
 
     public Author findOne(long id)
     {
         return authorRepository.findOne(id);
+    }
+
+    @Override
+    public void addItem(Author author){
+        authorRepository.save(author);
+
     }
 
 }

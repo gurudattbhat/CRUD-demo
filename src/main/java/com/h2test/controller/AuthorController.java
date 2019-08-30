@@ -1,12 +1,11 @@
-package com.h2test.Controller;
+package com.h2test.controller;
 
 import com.h2test.domain.Author;
-import com.h2test.repository.AuthorRepository;
 import com.h2test.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+
 @RestController
 @RequestMapping("/author")
 public class AuthorController {
@@ -23,9 +22,11 @@ public class AuthorController {
         return authorService.read();
     }
 
-    @RequestMapping(value="/", method=RequestMethod.POST)
-    public Author addAuthor(@RequestBody Author author)
+
+    @RequestMapping( value = "/", method = RequestMethod.POST )
+    public void addData(@RequestBody Author author)
     {
-        return authorService.addAuthor(author);
+         authorService.addItem(author);
     }
+
 }

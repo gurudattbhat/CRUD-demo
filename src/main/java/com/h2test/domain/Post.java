@@ -1,9 +1,12 @@
 package com.h2test.domain;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
 import javax.persistence.*;
 
+@Component
 @Entity
 public class Post {
 
@@ -56,7 +59,6 @@ public class Post {
 	public Author getAuthor() {
 		return author;
 	}
-
 	public void setAuthor(Author author) {
 		this.author = author;
 	}
@@ -79,4 +81,5 @@ public class Post {
 				", author=" + author +
 				'}';
 	}
+
 }

@@ -1,26 +1,25 @@
 package com.h2test.service;
-
-import javax.transaction.Transactional;
+import com.h2test.dto.PostDto;
+import com.h2test.domain.Author;
 import com.h2test.domain.Post;
 import com.h2test.repository.AuthorRepository;
 import com.h2test.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+
 
 import java.util.List;
 
 @Service
 public class PostServiceImpl implements PostService {
 
-
+    private Post post;
     private PostRepository postRepository;
     private AuthorRepository authorRepository;
 
     @Autowired
-    public PostServiceImpl(PostRepository postRepository, AuthorRepository authorRepository) {
+    public PostServiceImpl(Post post, PostRepository postRepository, AuthorRepository authorRepository) {
+        this.post = post;
         this.postRepository = postRepository;
         this.authorRepository = authorRepository;
     }
@@ -31,7 +30,14 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public List<Post> addItem(Post post){
+    public List<Post> addItem(PostDto postDto)
+    {
+        post.setTitle(postDto.getTitle());
+        post.setBody(postDto.getBody());
+
+        long authorId=postDto.getAuthorId();
+        Author author=authorRepository.findAuthorById(authorId);
+        post.setAuthor(author);
         postRepository.save(post);
         return postRepository.findAll();
     }
@@ -44,12 +50,12 @@ public class PostServiceImpl implements PostService {
 
 
     @Override
-    public Post update(long id,Post Update)
+    public Post update(long id,Post postOb)
     {
-        Post post=postRepository.findOne(id);
-        if(Update.getTitle()!=null)
+        post=postRepository.findOne(id);
+        if(postOb.getTitle()!=null)
         {
-            post.setTitle(Update.getTitle());
+            post.setTitle(postOb.getTitle());
         }
         return postRepository.save(post);
     }
@@ -60,9 +66,11 @@ public class PostServiceImpl implements PostService {
         return postRepository.findOne(id);
     }
 
-    @Override
-    public List<Post> findByTitle(String title) {
-        return postRepository.findByTitle(title);
+
+    public List<Post> findByTitleContaining(String title)
+    {
+        return postRepository.findByTitleContaining(title);
     }
+
 
 }

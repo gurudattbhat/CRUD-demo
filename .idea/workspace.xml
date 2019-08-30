@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e2c9779-487c-4a93-8eb3-25783965b680" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_190.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_6_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h2demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/h2demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/Controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/controller/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/Controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/domain/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/domain/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/domain/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/repository/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/service/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/service/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/service/AuthorServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/service/AuthorServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2test/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2test/service/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/Controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/Controller/AuthorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/Controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/Controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/domain/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/domain/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/domain/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/domain/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/repository/AuthorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/repository/AuthorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/repository/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/repository/PostRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/service/AuthorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/service/AuthorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/service/AuthorServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/service/AuthorServiceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/service/PostService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/h2test/service/PostServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/h2test/service/PostServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +61,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../rest/rest-starter" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
