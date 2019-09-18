@@ -30,29 +30,29 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public List<Post> addItem(PostDto postDto)
+    public Post addItem(PostDto postDto)
     {
         post.setTitle(postDto.getTitle());
         post.setBody(postDto.getBody());
-
+        post.setId(postDto.getId());
         long authorId=postDto.getAuthorId();
         Author author=authorRepository.findAuthorById(authorId);
         post.setAuthor(author);
-        postRepository.save(post);
-        return postRepository.findAll();
+        return postRepository.save(post);
+
     }
 
     @Override
     public void delete(long id)
     {
-        postRepository.delete(id);
+        postRepository.deleteById(id);
     }
 
 
     @Override
     public Post update(long id,Post postOb)
     {
-        post=postRepository.findOne(id);
+        post=postRepository.getOne(id);
         if(postOb.getTitle()!=null)
         {
             post.setTitle(postOb.getTitle());
@@ -61,9 +61,9 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public Post findOne(long id)
+    public Post getOne(long id)
     {
-        return postRepository.findOne(id);
+        return postRepository.findPostById(id);
     }
 
 

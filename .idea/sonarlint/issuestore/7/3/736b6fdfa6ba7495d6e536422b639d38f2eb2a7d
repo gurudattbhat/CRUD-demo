@@ -1,4 +1,9 @@
 
-asquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(²‘·
-\squid:S4684"@Replace this persistent entity with a simple POJO or DTO object.(º¨‹Ëıÿÿÿÿ
-dsquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–û‚ùÿÿÿÿ
+`squid:UselessImportCheck"5Remove this unused import 'com.h2test.dto.AuthorDto'.(ŠÀ†¹8ÍÓ™¨Ò-
+ksquid:S4488)"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ŒŒºùúÿÿÿÿ8®„ƒ¤Ò-
+fsquid:S44880"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğÄâÿ8Ã€«¤Ò-
+=squid:S37511"Make this method "public".(°ãäƒúÿÿÿÿ8Ã€«¤Ò-
+ksquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–û‚ùÿÿÿÿ8 œÍ¢Ò-
+ksquid:S4488!"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¹…ëşÿÿÿÿ8®åƒ£Ò-
+7squid:S3751*"Make this method "public".(§Àšb8®„ƒ¤Ò-
+8squid:S3751""Make this method "public".(ºõ¸8®åƒ£Ò-

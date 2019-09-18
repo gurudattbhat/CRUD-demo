@@ -12,7 +12,7 @@ public interface PostService{
      //List<Post> addItem(Post post);
      void delete(long id);
      Post update(long id,Post post);
-     Post findOne(long id);
+     Post getOne(long id);
      List<Post> findByTitleContaining(String title);
-     List<Post> addItem(PostDto postDto);
+     Post addItem(PostDto postDto);
 }

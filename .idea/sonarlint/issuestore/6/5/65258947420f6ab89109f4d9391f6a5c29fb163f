@@ -1,0 +1,11 @@
+
+hsquid:S44882"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÚŞ•8¾€ÿ©Ñ-
+esquid:S00112="FDefine and throw a dedicated exception instead of using a generic one.(ÈçïÕ8‹Â¹‚Ğ-
+Ysquid:UselessImportCheck".Remove this unused import 'java.util.Objects'.(¼¸õ›8ÅÎÎ¢Ò-
+jsquid:S00112;"FDefine and throw a dedicated exception instead of using a generic one.(êÆÖËùÿÿÿÿ8‹Â¹‚Ğ-
+esquid:S001127"FDefine and throw a dedicated exception instead of using a generic one.(Â††‘8‹Â¹‚Ğ-
+©%squid:RedundantThrowsDeclarationCheck3"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¨üğ¤ùÿÿÿÿ8¹Ôê¤Ò-
+msquid:S4488%"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¶€»²ùÿÿÿÿ8‹Â¹‚Ğ-
+jsquid:S001123"FDefine and throw a dedicated exception instead of using a generic one.(¨üğ¤ùÿÿÿÿ8¾€ÿ©Ñ-
+Isquid:S1452&"&Remove usage of generic wildcard type.(¤ƒ¹€úÿÿÿÿ8‹Â¹‚Ğ-
+Isquid:S14523"&Remove usage of generic wildcard type.(¨üğ¤ùÿÿÿÿ8¾€ÿ©Ñ-

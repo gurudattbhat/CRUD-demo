@@ -1,6 +1,7 @@
 package com.h2test.controller;
 import com.h2test.dto.PostDto;
 import com.h2test.domain.Post;
+import com.h2test.exception.PostNotFoundException;
 import com.h2test.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,8 @@ public class PostController {
 
     private PostService postService;
 
+
+
     @Autowired
     public PostController(PostService postService) {
         this.postService = postService;
@@ -32,7 +35,7 @@ public class PostController {
 
 
     @RequestMapping( value = "/", method = RequestMethod.POST )
-    public List<Post> addData(@RequestBody PostDto postDto)
+    public Post addData(@RequestBody PostDto postDto)
     {
         return postService.addItem(postDto);
     }
@@ -54,7 +57,10 @@ public class PostController {
     @RequestMapping (value="/{id}", method= RequestMethod.GET)
     public Post findOne(@PathVariable(value="id") long id)
     {
-         return postService.findOne(id);
+         if(postService.getOne(id)==null)
+             throw new PostNotFoundException("Post does not exists");
+         else
+             return postService.getOne(id);
 
 
     }
